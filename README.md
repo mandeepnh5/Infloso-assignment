@@ -3,7 +3,7 @@
 This repository houses two interconnected applications:
 
 1.  **Connectverse** (Backend API): A social media platform's core functionality, built with Node.js, Express, MongoDB, and JWT for secure authentication.
-2.  **MelodyVerse** (Frontend): A user-friendly music streaming service interface crafted using React and Tailwind CSS, featuring login and signup screens.
+2.  **MelodyVerse** (Frontend): A user-friendly music streaming service interface crafted using React and Tailwind CSS, featuring login and signup screens and one Home Page
 
 ## Table of Contents
 
