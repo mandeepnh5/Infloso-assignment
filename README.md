@@ -133,6 +133,10 @@ This repository houses two interconnected applications:
       * On successful signup, redirect to the login screen using React Router.
       * Simulated welcome email notification (no actual email sending).
 
+## Home Screen Page
+
+  * A basic home page like Spotify implemented.
+
 ## Scripts
 
   * **Backend (Connectverse):** `npm run dev` (in the backend folder)
