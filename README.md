@@ -147,11 +147,6 @@ This repository houses two interconnected applications:
 | `PORT` | The port number on which the application will listen for incoming requests. | 5000 |
 | `MONGODB_URI` | The connection string for your MongoDB database. | `mongodb+srv://<your_username>:<your_password>@<your_cluster_name>.mongodb.net/<your_database_name>?retryWrites=true&w=majority` |
 | `CORS_ORIGIN` | The allowed origins for Cross-Origin Resource Sharing (CORS). Set to `*` to allow requests from any origin. | `*` |
-
-**Optional environment variables:**
-
-| Variable Name | Description | Value Example |
-|---|---|---|
 | `ACCESS_TOKEN_SECRET` | The secret key used to sign access tokens. | `your_access_token_secret` |
 | `ACCESS_TOKEN_EXPIRY` | The expiration time for access tokens in seconds. | `86400` (1 day) |
 | `REFRESH_TOKEN_SECRET` | The secret key used to sign refresh tokens. | `your_refresh_token_secret` |
