@@ -94,7 +94,6 @@ This repository houses two interconnected applications:
       * **Request Body:**
         ```json
         {
-          "username": "string",
           "email": "string",
           "password": "string"
         }
@@ -166,7 +165,4 @@ This repository houses two interconnected applications:
 * For production environments, it's recommended to store these environment variables securely using a secrets management tool.
 
 By following these guidelines, you can ensure that your application is configured correctly and secure.
-ACCESS_TOKEN_SECRET=your_access_token_secret
-ACCESS_TOKEN_EXPIRY=1d
-REFRESH_TOKEN_SECRET=your_refresh_token_secret
-REFRESH_TOKEN_EXPIRY=10d
+
