@@ -18,8 +18,6 @@ This repository houses two interconnected applications:
       * [Signup Screen](#signup-screen)
   * [Scripts](#scripts)
   * [Environment Variables](#environment-variables)
-  * [Contributing](#contributing)
-  * [License](#license)
 
 -----
 
@@ -143,10 +141,31 @@ This repository houses two interconnected applications:
 
 ## Environment Variables
 
-Add the following to your `.env` file:
-PORT=5000
-MONGODB_URI=your_mongodb_connection_string
-CORS_ORIGIN=*
+**Required environment variables:**
+
+| Variable Name | Description | Value Example |
+|---|---|---|
+| `PORT` | The port number on which the application will listen for incoming requests. | 5000 |
+| `MONGODB_URI` | The connection string for your MongoDB database. | `mongodb+srv://<your_username>:<your_password>@<your_cluster_name>.mongodb.net/<your_database_name>?retryWrites=true&w=majority` |
+| `CORS_ORIGIN` | The allowed origins for Cross-Origin Resource Sharing (CORS). Set to `*` to allow requests from any origin. | `*` |
+
+**Optional environment variables:**
+
+| Variable Name | Description | Value Example |
+|---|---|---|
+| `ACCESS_TOKEN_SECRET` | The secret key used to sign access tokens. | `your_access_token_secret` |
+| `ACCESS_TOKEN_EXPIRY` | The expiration time for access tokens in seconds. | `86400` (1 day) |
+| `REFRESH_TOKEN_SECRET` | The secret key used to sign refresh tokens. | `your_refresh_token_secret` |
+| `REFRESH_TOKEN_EXPIRY` | The expiration time for refresh tokens in seconds. | `604800` (7 days) |
+
+**Note:**
+
+* Replace the placeholders `<your_username>`, `<your_password>`, `<your_cluster_name>`, and `<your_database_name>` with your actual MongoDB connection details.
+* The `ACCESS_TOKEN_SECRET` and `REFRESH_TOKEN_SECRET` should be strong, randomly generated values.
+* Adjust the `ACCESS_TOKEN_EXPIRY` and `REFRESH_TOKEN_EXPIRY` values to suit your application's requirements.
+* For production environments, it's recommended to store these environment variables securely using a secrets management tool.
+
+By following these guidelines, you can ensure that your application is configured correctly and secure.
 ACCESS_TOKEN_SECRET=your_access_token_secret
 ACCESS_TOKEN_EXPIRY=1d
 REFRESH_TOKEN_SECRET=your_refresh_token_secret
