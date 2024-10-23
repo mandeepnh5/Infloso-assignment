@@ -161,7 +161,4 @@ This repository houses two interconnected applications:
 * Replace the placeholders `<your_username>`, `<your_password>`, `<your_cluster_name>`, and `<your_database_name>` with your actual MongoDB connection details.
 * The `ACCESS_TOKEN_SECRET` and `REFRESH_TOKEN_SECRET` should be strong, randomly generated values.
 * Adjust the `ACCESS_TOKEN_EXPIRY` and `REFRESH_TOKEN_EXPIRY` values to suit your application's requirements.
-* For production environments, it's recommended to store these environment variables securely using a secrets management tool.
-
-By following these guidelines, you can ensure that your application is configured correctly and secure.
 
